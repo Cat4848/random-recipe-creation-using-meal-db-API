@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.display-random-recipe-header {
+    text-align: center;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: aquamarine;
+    border: none;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.display-random-recipe-row{
+    display: flex;
+}
+
+.display-random-recipe-column-left{
+    flex: 35%;
+    padding: 10px;
+}
+
+.display-random-recipe-column-right{
+    flex: 65%;
+    padding: 10px;
+}
+
+.display-random-recipe-data{
+    display: table;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

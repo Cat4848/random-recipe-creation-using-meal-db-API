@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/17be9efc7d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="display-random-recipe-header"> No cooking inspiration today?</h1>
+    <h3 class="display-random-recipe-header">Click below to generate a random recipe.</h3>
+    <div id="button-div" class="display-random-recipe-header">
+        <button id="button-generate-random-recipe"> 
+            <i class="fa-solid fa-kitchen-set"></i> Generate
+        </button>
+    </div>
+
+    <div id="error-message-container"></div>
+
+    <div class="display-random-recipe-row">
+        <div class="display-random-recipe-column-left">
+            <div id="display-random-recipe-image-box" class="display-random-recipe-data"></div>
+            <div id="display-random-recipe-highlights-box" class="display-random-recipe-data"></div>
+            <div id="display-random-recipe-ingredients-and-measures-box" class="display-random-recipe-data"></div>
+        </div>
+        <div class="display-random-recipe-column-right">
+            <div id="random-recipe-title-box" class="display-random-recipe-data"></div>
+            <div id="display-random-recipe-instructions-box" class="display-random-recipe-data"></div>
+            <div id="random-recipe-video-box" class="display-random-recipe-data">
+                <iframe id="video-player-iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
