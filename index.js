@@ -33,6 +33,7 @@ function displayErrorMessage(errorMessage) {
 
 function parseRandomRecipeData(randomRecipe) {
     const randomRecipeObjectExtractedFromAPIDataStructure = randomRecipe.meals[0];
+    console.log(randomRecipeObjectExtractedFromAPIDataStructure);
     const randomRecipeKeys = Object.keys(randomRecipeObjectExtractedFromAPIDataStructure);
     const matchImageKey = /strMealThumb/gi;
     const matchCategoryKey = /strCategory/gi;
@@ -109,7 +110,7 @@ function displayHighlightsElements(category, country) {
 }
 
 function displayIngredientsAndMeasures(ingredients, measures) {
-    const ingredientsHeaderElement = document.createElement("h2");
+    const ingredientsHeaderElement = document.createElement("h3");
     ingredientsHeaderElement.innerHTML = "Ingredients:";
 
     const unorderedListElement = document.createElement("ul");
